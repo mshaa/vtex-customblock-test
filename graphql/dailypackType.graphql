@@ -1,0 +1,6 @@
+type DailypackType {
+  id: String
+  dailyDosage: String
+  country: String
+  element: String
+}

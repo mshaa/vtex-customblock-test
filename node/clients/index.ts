@@ -1,3 +1,10 @@
-import { IOClients } from "@vtex/api";
+import { IOClients } from '@vtex/api'
 
-export class Clients extends IOClients {}
+import Status from './status'
+
+// Extend the default IOClients implementation with our own custom clients.
+export class Clients extends IOClients {
+  public get status() {
+    return this.getOrSet('status', Status)
+  }
+}

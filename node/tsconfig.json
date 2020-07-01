@@ -1,18 +1,27 @@
 {
   "compilerOptions": {
-    "alwaysStrict": true,
-    "esModuleInterop": true,
+    "types": ["node", "jest"],
+    "typeRoots": ["node_modules/@types"],
+    "target": "es2017",
     "module": "commonjs",
     "moduleResolution": "node",
-    "noImplicitAny": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": false,
+    "noEmitOnError": false,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
     "skipLibCheck": true,
-    "strictFunctionTypes": true,
     "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "target": "es2019"
-  }
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true
+  },
+  "typeAcquisition": {
+    "enable": false
+  },
+  "include": ["global.ts", "./**/*"],
+  "exclude": ["node_modules"]
 }

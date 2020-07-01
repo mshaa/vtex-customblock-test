@@ -1,10 +1,8 @@
-query dailyPack($acronym: String! ) {
-  documents(acronym: $acronym, fields: "country, element, dailyDosage" )
-    @context(provider: "vtex.store-graphql") {
+query dailyPack_local {
+  dailypack {
     id
-     fields {
-         key
-         value
-    }
+    dailyDosage
+    country
+    element
   }
 }

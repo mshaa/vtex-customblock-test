@@ -1,5 +1,8 @@
 {
   "add-to-pack-btn": {
-    "component": "AddToPackBtn"
+    "component": "AddToPackBtn",
+    "required": [
+      "add-to-cart-button"
+    ]
   }
 }
